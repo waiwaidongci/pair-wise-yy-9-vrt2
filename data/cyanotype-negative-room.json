@@ -7,7 +7,7 @@
       "exposure": "8分钟",
       "waterSource": "井水过滤",
       "box": "蓝盒A-03",
-      "status": "待入盒",
+      "status": "待交付",
       "defect": "边角显影不均",
       "logs": [
         {
@@ -29,6 +29,105 @@
           "defect": "边角显影不均",
           "repair": "边角重涂",
           "note": "放入A盒"
+        }
+      ],
+      "id": "CN-001",
+      "workflow": [
+        {
+          "key": "coating",
+          "name": "涂布",
+          "order": 0,
+          "status": "done",
+          "failReason": null,
+          "attempts": [
+            {
+              "at": "2026-06-20",
+              "result": "pass",
+              "rework": false,
+              "note": "旧档补录"
+            }
+          ],
+          "completedAt": "2026-06-20"
+        },
+        {
+          "key": "drying",
+          "name": "晾干",
+          "order": 1,
+          "status": "done",
+          "failReason": null,
+          "attempts": [
+            {
+              "at": "2026-06-20",
+              "result": "pass",
+              "rework": false,
+              "note": "旧档补录"
+            }
+          ],
+          "completedAt": "2026-06-20"
+        },
+        {
+          "key": "exposure",
+          "name": "曝光",
+          "order": 2,
+          "status": "done",
+          "failReason": null,
+          "attempts": [
+            {
+              "at": "2026-06-20",
+              "result": "pass",
+              "rework": false,
+              "note": "阴天补时2分钟"
+            }
+          ],
+          "completedAt": "2026-06-20"
+        },
+        {
+          "key": "washing",
+          "name": "冲洗",
+          "order": 3,
+          "status": "done",
+          "failReason": null,
+          "attempts": [
+            {
+              "at": "2026-06-20",
+              "result": "pass",
+              "rework": false,
+              "note": "旧档补录"
+            }
+          ],
+          "completedAt": "2026-06-20"
+        },
+        {
+          "key": "reexposure",
+          "name": "复晒",
+          "order": 4,
+          "status": "done",
+          "failReason": null,
+          "attempts": [
+            {
+              "at": "2026-06-20",
+              "result": "pass",
+              "rework": false,
+              "note": "旧档补录"
+            }
+          ],
+          "completedAt": "2026-06-20"
+        },
+        {
+          "key": "boxing",
+          "name": "入盒",
+          "order": 5,
+          "status": "done",
+          "failReason": null,
+          "attempts": [
+            {
+              "at": "2026-06-21T03:50:30.042Z",
+              "result": "pass",
+              "rework": false,
+              "note": "放入A盒；显影：稳定；缺陷：边角显影不均；修补：边角重涂"
+            }
+          ],
+          "completedAt": "2026-06-21T03:50:30.042Z"
         }
       ]
     }
